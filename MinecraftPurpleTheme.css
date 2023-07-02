@@ -1,24 +1,20 @@
 html {
-  background-image: url("https://github.com/Joshet18/pterotheme/blob/main/background_solid_purple-644071.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
   background-size: cover;
-  background-color: transparent;
+  background-color: #281a31;
 }
 
 a.GreyRowBox-sc-1xo9c6v-0.ServerRow__StatusIndicatorBox-sc-1ibsw91-2.dyLna-D.fRwFrz.DashboardContainer___StyledServerRow-sc-1topkxf-2 {
-  background-color: #67487a;
+  background-color: #291b32;
 }
 
 a.GreyRowBox-sc-1xo9c6v-0.ServerRow__StatusIndicatorBox-sc-1ibsw91-2.dyLna-D.fwbDSe.DashboardContainer___StyledServerRow-sc-1topkxf-2.jbVWLN {
-  background-color: #452d55;
+  background-color: #291b32;
   background-size: cover;
 
 }
 
 div.SubNavigation-sc-lfuaoi-0.jZPsWO.fade-appear-done.fade-enter-done {
-  background-color: #47295a;
+  background-color: #291b32;
 }
 
 div.grid.grid-cols-6.gap-2.md:gap-4.col-span-4.lg:col-span-1.order-last.lg:order-none {
@@ -42,7 +38,7 @@ div.w-full.bg-neutral-900.shadow-md.overflow-x-auto {
 }
 
 div.icon.mr-4 {
-  background-color: #2e2f48;
+  background-color: #3e2e48;
 }
 
 a.style-module_35MPv1CD.style-module_35MPv1CD.active {
