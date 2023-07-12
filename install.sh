@@ -18,9 +18,17 @@ installTheme(){
     rm /var/www/pterodactyl/resources/scripts/MinecraftPurpleTheme.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
     rm /var/www/pterodactyl/public/favicons/favicon.ico
+    rm /var/www/pterodactyl/public/favicons/apple-touch-icon.png
+    rm /var/www/pterodactyl/public/favicons/favicon-16x16.png
+    rm /var/www/pterodactyl/public/favicons/favicon-32x32.png
+    rm /var/www/pterodactyl/public/favicons/favicon-96x96.png
     mv index.tsx /var/www/pterodactyl/resources/scripts/index.tsx
     mv MinecraftPurpleTheme.css /var/www/pterodactyl/resources/scripts/MinecraftPurpleTheme.css
     mv favicon.ico /var/www/pterodactyl/public/favicons/favicon.ico
+    mv apple-touch-icon.png /var/www/pterodactyl/public/favicons/apple-touch-icon.png
+    mv favicon-16x16.png /var/www/pterodactyl/public/favicons/favicon-16x16.png
+    mv favicon-32x32.png /var/www/pterodactyl/public/favicons/favicon-32x32.png
+    mv favicon-96x96.png /var/www/pterodactyl/public/favicons/favicon-96x96.png
     cd /var/www/pterodactyl
 
     curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
