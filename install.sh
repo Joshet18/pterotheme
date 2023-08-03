@@ -20,7 +20,7 @@ fi
 clear
 
 installPanel(){
-    echo "${green} Installing panel.."
+    echo "Installing panel.."
     apt -y install software-properties-common curl apt-transport-https ca-certificates gnupg
     LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
     curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg
@@ -40,7 +40,7 @@ installPanel(){
 installTheme(){
     cd /var/www/
     tar -cvf Backup.tar.gz pterodactyl
-    echo "${green} Installing theme..."
+    echo "Installing theme..."
     cd /var/www/pterodactyl
     rm -r pterotheme
     git clone https://github.com/Joshet18/pterotheme.git
@@ -79,7 +79,7 @@ installThemeQuestion(){
     while true; do
         read -p "Are you sure that you want to install the panel [y/n]? " yn
         case $yn in
-            [Yy]* ) installPanel; break;;
+            [Yy]* ) installTheme; break;;
             [Nn]* ) exit;;
             * ) echo "Please answer yes or no.";;
         esac
@@ -90,7 +90,7 @@ installPanelQuestion(){
     while true; do
         read -p "Are you sure that you want to install the theme [y/n]? " yn
         case $yn in
-            [Yy]* ) installTheme; break;;
+            [Yy]* ) installPanel; break;;
             [Nn]* ) exit;;
             * ) echo "Please answer yes or no.";;
         esac
