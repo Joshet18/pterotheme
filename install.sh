@@ -77,7 +77,7 @@ installTheme(){
 
 installThemeQuestion(){
     while true; do
-        read -p "Are you sure that you want to install the panel [y/n]? " yn
+        read -p "Are you sure that you want to install the theme [y/n]? " yn
         case $yn in
             [Yy]* ) installTheme; break;;
             [Nn]* ) exit;;
@@ -88,7 +88,7 @@ installThemeQuestion(){
 
 installPanelQuestion(){
     while true; do
-        read -p "Are you sure that you want to install the theme [y/n]? " yn
+        read -p "Are you sure that you want to install the panel [y/n]? " yn
         case $yn in
             [Yy]* ) installPanel; break;;
             [Nn]* ) exit;;
