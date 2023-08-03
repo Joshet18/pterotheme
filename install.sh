@@ -20,6 +20,7 @@ fi
 clear
 
 installPanel(){
+    echo "${green} Installing panel.."
     apt -y install software-properties-common curl apt-transport-https ca-certificates gnupg
     LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
     curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg
@@ -39,7 +40,7 @@ installPanel(){
 installTheme(){
     cd /var/www/
     tar -cvf Backup.tar.gz pterodactyl
-    echo "Installing theme..."
+    echo "${green} Installing theme..."
     cd /var/www/pterodactyl
     rm -r pterotheme
     git clone https://github.com/Joshet18/pterotheme.git
