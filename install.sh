@@ -23,8 +23,6 @@ fi
 
 clear
 
-
-
 Theme(){
     echo -e "${green}Instalando Tema..."
     cd /var/www/
@@ -113,24 +111,24 @@ restoreBackUp(){
     sudo php artisan optimize:clear
 }
 
+Main(){
     clear
     echo -e "${lightpurple}
-    ███╗  ██╗██╗ ██████╗ ██╗  ██╗████████╗███████╗ █████╗ ██╗     ██╗     
-    ████╗ ██║██║██╔════╝ ██║  ██║╚══██╔══╝██╔════╝██╔══██╗██║     ██║     
-    ██╔██╗██║██║██║  ██╗ ███████║   ██║   █████╗  ███████║██║     ██║     
-    ██║╚████║██║██║  ╚██╗██╔══██║   ██║   ██╔══╝  ██╔══██║██║     ██║     
-    ██║ ╚███║██║╚██████╔╝██║  ██║   ██║   ██║     ██║  ██║███████╗███████╗
-    ╚═╝  ╚══╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝
-    ${white} VPS Utils for Pterodactyl
+███╗  ██╗██╗ ██████╗ ██╗  ██╗████████╗███████╗ █████╗ ██╗     ██╗     
+████╗ ██║██║██╔════╝ ██║  ██║╚══██╔══╝██╔════╝██╔══██╗██║     ██║     
+██╔██╗██║██║██║  ██╗ ███████║   ██║   █████╗  ███████║██║     ██║     
+██║╚████║██║██║  ╚██╗██╔══██║   ██║   ██╔══╝  ██╔══██║██║     ██║     
+██║ ╚███║██║╚██████╔╝██║  ██║   ██║   ██║     ██║  ██║███████╗███████╗
+╚═╝  ╚══╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝
+${gray} VPS Utils for Pterodactyl
 
-    ${purple}[1]${gray} Instalar Tema
-    ${purple}[2]${gray} Instalar Panel (Dependencias)
-    ${purple}[3]${gray} Instalar Wings (Dependencias)
-    ${purple}[4]${gray} Cargar Backup
-    ${purple}[5]${gray} Reparar Panel
-    ${purple}[6]${gray} Salir
-    "
-    echo -ne "${gray}[!] ${white}Elije una opcion"; read -p ": " choice
+${purple}[1]${green} Instalar Tema
+${purple}[2]${green} Instalar Panel (Dependencias)
+${purple}[3]${green} Instalar Wings (Dependencias)
+${purple}[4]${green} Cargar Backup
+${purple}[5]${green} Reparar Panel
+${purple}[6]${green} Salir"
+    echo -ne "${lightcyan}[!] ${cyan}Elije una opcion"; read -p ": " choice
     if [ $choice == "1" ]
         then
         ThemeQuestion
@@ -155,3 +153,5 @@ restoreBackUp(){
         then
         exit
     fi
+}
+Main
