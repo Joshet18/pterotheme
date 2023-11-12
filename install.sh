@@ -151,6 +151,7 @@ ${purple}[6]${green} Salir"
     fi
     if [ $choice == "6" ]
         then
+        echo -e "${clear}"
         exit
     fi
 }
