@@ -128,7 +128,7 @@ ${purple}[3]${green} Instalar Wings (Dependencias)
 ${purple}[4]${green} Cargar Backup
 ${purple}[5]${green} Reparar Panel
 ${purple}[6]${green} Salir"
-    echo -ne "${lightcyan}[!] ${cyan}Elije una opcion"; read -p ": " choice
+    echo -ne "${lightcyan}[!] ${cyan}Elije una opcion${white}"; read -p ": " choice
     if [ $choice == "1" ]
         then
         ThemeQuestion
