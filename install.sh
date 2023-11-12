@@ -113,7 +113,6 @@ restoreBackUp(){
     sudo php artisan optimize:clear
 }
 
-Main(){
     clear
     echo -e "${lightpurple}
     ███╗  ██╗██╗ ██████╗ ██╗  ██╗████████╗███████╗ █████╗ ██╗     ██╗     
@@ -156,5 +155,3 @@ Main(){
         then
         exit
     fi
-}
-Main
