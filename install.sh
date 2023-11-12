@@ -138,11 +138,11 @@ Main(){
     fi
     if [ $choice == "2" ]
         then
-        restoreBackUp
+        PterodactylDependencies
     fi
     if [ $choice == "3" ]
         then
-        restoreBackUp
+        WingsDependencies
     fi
     if [ $choice == "4" ]
         then
